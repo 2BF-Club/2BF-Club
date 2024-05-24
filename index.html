@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to 2BF Club Map</h1>
+    </header>
+    <main>
+        <div style="width: 50%;" id="map"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Define city data
+        const cities = [
+            {
+                name: 'SJTU',
+                info: `
+                    <b>SJTU</b><br>
+                    <li>Bingxu Zhong</li>
+                `,
+                location: [31.0253, 121.4365]
+            },
+            {
+                name: 'BGI Hangzhou',
+                info: `
+                    <b>BGI Hangzhou</b><br>
+                    <li><a href="https://zaakzoeng.github.io/" target="_blank">Ze Zhang</a></li>
+                `,
+                location: [30.3214, 120.0633]
+            },
+            {
+                name: 'UCAS-HIAS',
+                info: `
+                    <b>UCAS-HIAS</b><br>
+                    <li>Xinlei Cai</li>
+                    <li>Zijian Wang</li>
+                    <li>Mingqi Jiao</li>
+                    <li>Jiachen Wang</li>
+                `,
+                location: [30.1365, 120.0714]
+            },
+            {
+                name: 'SCUT',
+                info: `
+                    <b>SCUT</b><br>
+                    <li>Qibin Zhang</li>
+                    <li>Xiaobei Liu</li>
+                `,
+                location: [23.1563, 113.3420]
+            },
+            {
+                name: 'CityU',
+                info: `
+                    <b>CityU</b><br>
+                    <li>Chengshang LVU</li>
+                `,
+                location: [22.3364, 114.1728]
+            }
+        ];
+
+        // Initialize the map with the world as the initial view
+        const map = L.map('map');
+
+        // Calculate the center of all cities
+        const cityCoordinates = cities.map(city => city.location);
+        const bounds = L.latLngBounds(cityCoordinates);
+        const center = bounds.getCenter();
+
+        // Set the map view to center and appropriate zoom level
+        map.setView(center, map.getBoundsZoom(bounds));
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add markers for cities with more information
+        cities.forEach(city => {
+            L.marker(city.location)
+                .addTo(map)
+                .bindPopup(city.info);
+        });
+    </script>
+</body>
+
+</html>
