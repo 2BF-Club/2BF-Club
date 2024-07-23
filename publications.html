@@ -114,81 +114,79 @@
             <li><a href="publications.html">Publications</a></li>
         </ul>
     </nav>
-    <main>
-        <div class="map-container">
-            <div id="map"></div>
-        </div>
-    </main>
     <div class="timeline">
-        <div class="container">
-            <div class="date">2024-07-03</div>
-            <div class="content">
-                <h2>Detecting tipping points of complex diseases by network information entropy</h2>
-                <p><b>Lyu, Chengshang</b>, Chen, L., & Liu, X. (2024). Detecting tipping points of complex diseases by
-                    network information entropy. Briefings in Bioinformatics, 25(4).</p>
-                <p><a href="https://doi.org/10.1093/bib/bbae311" target="_blank">https://doi.org/10.1093/bib/bbae311</a>
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2024-04-10</div>
-            <div class="content">
-                <h2>Sex differences orchestrated by androgens at single-cell resolution</h2>
-                <p>Li, F., ... , <b>Zhang, Ze</b>, ..., & Gao, D. (2024). Sex differences orchestrated by androgens at
-                    single-cell resolution. Nature, 1-8.</p>
-                <p><a href="https://doi.org/10.1038/s41586-024-07291-6"
-                        target="_blank">https://doi.org/10.1038/s41586-024-07291-6</a></p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2024-01-30</div>
-            <div class="content">
-                <h2>Brain-inspired chaotic spiking backpropagation</h2>
-                <p><b>Zijian Wang</b>, Peng Tao, Luonan Chen, Brain-inspired chaotic spiking backpropagation, National
-                    Science Review, Volume 11, Issue 6, June 2024, nwae037, https://doi.org/10.1093/nsr/nwae037</p>
-                <p><a href="https://doi.org/10.1093/nsr/nwae037" target="_blank">https://doi.org/10.1093/nsr/nwae037</a>
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2023-09-05</div>
-            <div class="content">
-                <h2>Earthquake alerting based on spatial geodetic data by spatiotemporal information transformation
-                    learning</h2>
-                <p>Tong, Y., Hong, R., <b>Zhang, Ze</b>, Aihara, K., Chen, P., Liu, R., & Chen, L. (2023). Earthquake
-                    alerting based on spatial geodetic data by spatiotemporal information transformation learning.
-                    Proceedings of the National Academy of Sciences, 120(37), e2302275120.</p>
-                <p><a href="https://doi.org/10.1073/pnas.2302275120"
-                        target="_blank">https://doi.org/10.1073/pnas.2302275120</a></p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2023-01-27</div>
-            <div class="content">
-                <h2>TeCD: The eccDNA Collection Database for extrachromosomal circular DNA</h2>
-                <p>Guo, J., <b>Zhang, Ze</b>, Li, Q., Chang, X., & Liu, X. (2023). Tecd: The eccdna collection database
-                    for extrachromosomal circular dna. BMC genomics, 24(1), 47.</p>
-                <p><a href="https://doi.org/10.1186/s12864-023-09135-5"
-                        target="_blank">https://doi.org/10.1186/s12864-023-09135-5</a></p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2022-10-10</div>
-            <div class="content">
-                <h2>Elucidating tumor heterogeneity from spatially resolved transcriptomics data by multi-view graph
-                    collaborative learning</h2>
-                <p>Zuo, C., Zhang, Y., Cao, C., Feng, J., <b>Jiao, Mingqi</b>, & Chen, L. (2022). Elucidating tumor
-                    heterogeneity from spatially resolved transcriptomics data by multi-view graph collaborative
-                    learning. Nature Communications, 13(1), 5962.</p>
-                <p><a href="https://doi.org/10.1038/s41467-022-33619-9"
-                        target="_blank">https://doi.org/10.1038/s41467-022-33619-9</a></p>
-            </div>
-        </div>
+        <div id="publications-container"></div>
     </div>
     <div style="margin: 0 0 100px 0;"></div>
     <footer>
         <p>&copy; 2024 <a href="https://github.com/2BF-Club" target="_blank">2BF-Club</a>. All rights reserved.</p>
     </footer>
+    <!-- 文章数据 -->
+    <script>
+        // Example of how RIS data might be formatted as a JavaScript object
+        const publications = [
+            {
+                "date": "2024-07-03",
+                "title": "Detecting tipping points of complex diseases by network information entropy",
+                "citation": "Lyu, Chengshang, Chen, L., & Liu, X. (2024). Briefings in Bioinformatics, 25(4).",
+                "url": "https://doi.org/10.1093/bib/bbae311",
+                "abstract": "No abstract provided."
+            },
+            {
+                "date": "2024-04-10",
+                "title": "Sex differences orchestrated by androgens at single-cell resolution",
+                "citation": "Li, F., ... , Zhang, Ze, ..., & Gao, D. (2024). Nature, 1-8.",
+                "url": "https://doi.org/10.1038/s41586-024-07291-6",
+                "abstract": "Sex differences in mammalian complex traits are prevalent and are intimately associated with androgens1,2,3,4,5,6,7. However, a molecular and cellular profile of sex differences and their modulation by androgens is still lacking. Here we constructed a high-dimensional single-cell transcriptomic atlas comprising over 2.3 million cells from 17 tissues in Mus musculus and explored the effects of sex and androgens on the molecular programs and cellular populations. In particular, we found that sex-biased immune gene expression and immune cell populations, such as group 2 innate lymphoid cells, were modulated by androgens. Integration with the UK Biobank dataset revealed potential cellular targets and risk gene enrichment in antigen presentation for sex-biased diseases. This study lays the groundwork for understanding the sex differences orchestrated by androgens and provides important evidence for targeting the androgen pathway as a broad therapeutic strategy for sex-biased diseases."
+            },
+            {
+                "date": "2024-01-30",
+                "title": "Brain-inspired chaotic spiking backpropagation",
+                "citation": "Zijian Wang, Peng Tao, Luonan Chen, National Science Review, Volume 11, Issue 6, June 2024, nwae037.",
+                "url": "https://doi.org/10.1093/nsr/nwae037",
+                "abstract": "No abstract provided."
+            },
+            {
+                "date": "2023-09-05",
+                "title": "Earthquake alerting based on spatial geodetic data by spatiotemporal information transformation learning",
+                "citation": "Tong, Y., Hong, R., Zhang, Ze, Aihara, K., Chen, P., Liu, R., & Chen, L. (2023). Proceedings of the National Academy of Sciences, 120(37), e2302275120.",
+                "url": "https://doi.org/10.1073/pnas.2302275120",
+                "abstract": "No abstract provided."
+            },
+            {
+                "date": "2023-01-27",
+                "title": "TeCD: The eccDNA Collection Database for extrachromosomal circular DNA",
+                "citation": "Guo, J., Zhang, Ze, Li, Q., Chang, X., & Liu, X. (2023). BMC genomics, 24(1), 47.",
+                "url": "https://doi.org/10.1186/s12864-023-09135-5",
+                "abstract": "Background Extrachromosomal circular DNA (eccDNA) is a kind of DNA that widely exists in eukaryotic cells. Studies in recent years have shown that eccDNA is often enriched during tumors and aging, and participates in the development of cell physiological activities in a special way, so people have paid more and more attention to the eccDNA, and it has also become a critical new topic in modern biological research. Description We built a database to collect eccDNA, including animals, plants and fungi, and provide researchers with an eccDNA retrieval platform. The collected eccDNAs were processed in a uniform format and classified according to the species to which it belongs and the chromosome of the source. Each eccDNA record contained sequence length, start and end sites on the corresponding chromosome, order of the bases, genomic elements such as genes and transposons, and other information in the respective sequencing experiment. All the data were stored into the TeCD (The eccDNA Collection Database) and the BLAST (Basic Local Alignment Search Tool) sequence alignment function was also added into the database for analyzing the potential eccDNA sequences. Conclusion We built TeCD, a platform for users to search and obtain eccDNA data, and analyzed the possible potential functions of eccDNA. These findings may provide a basis and direction for researchers to further explore the biological significance of eccDNA in the future."
+            },
+            {
+                "date": "2022-10-10",
+                "title": "Elucidating tumor heterogeneity from spatially resolved transcriptomics data by multi-view graph collaborative learning",
+                "citation": "Zuo, C., Zhang, Y., Cao, C., Feng, J., Jiao, Mingqi, & Chen, L. (2022). Nature Communications, 13(1), 5962.",
+                "url": "https://doi.org/10.1038/s41467-022-33619-9",
+                "abstract": "No abstract provided."
+            }
+
+        ];
+
+        const container = document.getElementById('publications-container');
+
+        publications.forEach(pub => {
+            const pubHTML = `
+                <div class="container">
+                    <div class="date">${pub.date}</div>
+                    <div class="content">
+                        <h2>${pub.title}</h2>
+                        <p>${pub.citation}</p>
+                        <p><a href="${pub.url}" target="_blank">${pub.url}</a></p>
+                        <p>Abstract: ${pub.abstract}</p>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += pubHTML;
+        });
+    </script>
 </body>
 
 </html>

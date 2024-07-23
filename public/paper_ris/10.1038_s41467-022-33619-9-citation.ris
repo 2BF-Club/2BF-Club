@@ -1,0 +1,20 @@
+TY  - JOUR
+AU  - Zuo, Chunman
+AU  - Zhang, Yijian
+AU  - Cao, Chen
+AU  - Feng, Jinwang
+AU  - Jiao, Mingqi
+AU  - Chen, Luonan
+PY  - 2022
+DA  - 2022/10/10
+TI  - Elucidating tumor heterogeneity from spatially resolved transcriptomics data by multi-view graph collaborative learning
+JO  - Nature Communications
+SP  - 5962
+VL  - 13
+IS  - 1
+AB  - Spatially resolved transcriptomics (SRT) technology enables us to gain novel insights into tissue architecture and cell development, especially in tumors. However, lacking computational exploitation of biological contexts and multi-view features severely hinders the elucidation of tissue heterogeneity. Here, we propose stMVC, a multi-view graph collaborative-learning model that integrates histology, gene expression, spatial location, and biological contexts in analyzing SRT data by attention. Specifically, stMVC adopting semi-supervised graph attention autoencoder separately learns view-specific representations of histological-similarity-graph or spatial-location-graph, and then simultaneously integrates two-view graphs for robust representations through attention under semi-supervision of biological contexts. stMVC outperforms other tools in detecting tissue structure, inferring trajectory relationships, and denoising on benchmark slices of human cortex. Particularly, stMVC identifies disease-related cell-states and their transition cell-states in breast cancer study, which are further validated by the functional and survival analysis of independent clinical data. Those results demonstrate clinical and prognostic applications from SRT data.
+SN  - 2041-1723
+UR  - https://doi.org/10.1038/s41467-022-33619-9
+DO  - 10.1038/s41467-022-33619-9
+ID  - Zuo2022
+ER  - 

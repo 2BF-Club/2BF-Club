@@ -1,0 +1,28 @@
+
+TY  - JOUR
+T1  - Earthquake alerting based on spatial geodetic data by spatiotemporal information transformation learning
+AU  - Tong, Yuyan
+AU  - Hong, Renhao
+AU  - Zhang, Ze
+AU  - Aihara, Kazuyuki
+AU  - Chen, Pei
+AU  - Liu, Rui
+AU  - Chen, Luonan
+Y1  - 2023/09/12
+PY  - 2023
+DA  - 2023/09/12
+N1  - doi: 10.1073/pnas.2302275120
+DO  - 10.1073/pnas.2302275120
+T2  - Proceedings of the National Academy of Sciences
+JF  - Proceedings of the National Academy of Sciences
+JO  - Proceedings of the National Academy of Sciences
+SP  - e2302275120
+VL  - 120
+IS  - 37
+PB  - Proceedings of the National Academy of Sciences
+M3  - doi: 10.1073/pnas.2302275120
+UR  - https://doi.org/10.1073/pnas.2302275120
+Y2  - 2024/07/23
+N2  - It is notoriously challenging to alert for earthquakes due to the high nonlinearity, nonstationarity, and complexity of the underlying geodynamics. Here, we developed an efficient computational method based on spatiotemporal information transformation for high-dimensional real-time data. From the perspectives of critical slowing down and delay embedding theory, such a method can identify local deformation precursors by detecting signals both from the unpredictability and instability of geodynamics and thus alert for possible earthquakes in a timely manner. With real-time spatial geodetic time-series data, the application of this method in various regions demonstrated its potential in alerting for strong earthquakes. Alerting for imminent earthquakes is particularly challenging due to the high nonlinearity and nonstationarity of geodynamical phenomena. In this study, based on spatiotemporal information (STI) transformation for high-dimensional real-time data, we developed a model-free framework, i.e., real-time spatiotemporal information transformation learning (RSIT), for extending the nonlinear and nonstationary time series. Specifically, by transforming high-dimensional information of the global navigation satellite system into one-dimensional dynamics via the STI strategy, RSIT efficiently utilizes two criteria of the transformed one-dimensional dynamics, i.e., unpredictability and instability. Such two criteria contemporaneously signal a potential critical transition of the geodynamical system, thereby providing early-warning signals of possible upcoming earthquakes. RSIT explores both the spatial and temporal dynamics of real-world data on the basis of a solid theoretical background in nonlinear dynamics and delay-embedding theory. The effectiveness of RSIT was demonstrated on geodynamical data of recent earthquakes from a number of regions across at least 4 y and through further comparison with existing methods.
+AB  - It is notoriously challenging to alert for earthquakes due to the high nonlinearity, nonstationarity, and complexity of the underlying geodynamics. Here, we developed an efficient computational method based on spatiotemporal information transformation for high-dimensional real-time data. From the perspectives of critical slowing down and delay embedding theory, such a method can identify local deformation precursors by detecting signals both from the unpredictability and instability of geodynamics and thus alert for possible earthquakes in a timely manner. With real-time spatial geodetic time-series data, the application of this method in various regions demonstrated its potential in alerting for strong earthquakes. Alerting for imminent earthquakes is particularly challenging due to the high nonlinearity and nonstationarity of geodynamical phenomena. In this study, based on spatiotemporal information (STI) transformation for high-dimensional real-time data, we developed a model-free framework, i.e., real-time spatiotemporal information transformation learning (RSIT), for extending the nonlinear and nonstationary time series. Specifically, by transforming high-dimensional information of the global navigation satellite system into one-dimensional dynamics via the STI strategy, RSIT efficiently utilizes two criteria of the transformed one-dimensional dynamics, i.e., unpredictability and instability. Such two criteria contemporaneously signal a potential critical transition of the geodynamical system, thereby providing early-warning signals of possible upcoming earthquakes. RSIT explores both the spatial and temporal dynamics of real-world data on the basis of a solid theoretical background in nonlinear dynamics and delay-embedding theory. The effectiveness of RSIT was demonstrated on geodynamical data of recent earthquakes from a number of regions across at least 4 y and through further comparison with existing methods.
+ER  - 

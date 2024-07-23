@@ -1,0 +1,25 @@
+Provider: Silverchair
+Database: Oxford University Press
+Content: text/plain; charset="UTF-8"
+
+TY  - JOUR
+AU  - Wang, Zijian
+AU  - Tao, Peng
+AU  - Chen, Luonan
+T1  - Brain-inspired chaotic spiking backpropagation
+PY  - 2024
+Y1  - 2024/06/01
+DO  - 10.1093/nsr/nwae037
+JO  - National Science Review
+JA  - Natl Sci Rev
+VL  - 11
+IS  - 6
+SP  - nwae037
+SN  - 2095-5138
+AB  - Spiking neural networks (SNNs) have superior energy efficiency due to their spiking signal transmission, which mimics biological nervous systems, but they are difficult to train effectively. Although surrogate gradient-based methods offer a workable solution, trained SNNs frequently fall into local minima because they are still primarily based on gradient dynamics. Inspired by the chaotic dynamics in animal brain learning, we propose a chaotic spiking backpropagation (CSBP) method that introduces a loss function to generate brain-like chaotic dynamics and further takes advantage of the ergodic and pseudo-random nature to make SNN learning effective and robust. From a computational viewpoint, we found that CSBP significantly outperforms current state-of-the-art methods on both neuromorphic data sets (e.g. DVS-CIFAR10 and DVS-Gesture) and large-scale static data sets (e.g. CIFAR100 and ImageNet) in terms of accuracy and robustness. From a theoretical viewpoint, we show that the learning process of CSBP is initially chaotic, then subject to various bifurcations and eventually converges to gradient dynamics, consistently with the observation of animal brain activity. Our work provides a superior core tool for direct SNN training and offers new insights into understanding the learning process of a biological brain.
+Y2  - 7/23/2024
+UR  - https://doi.org/10.1093/nsr/nwae037
+ER  - 
+
+
+

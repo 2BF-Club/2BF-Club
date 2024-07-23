@@ -110,48 +110,33 @@
             <li><a href="publications.html">Publications</a></li>
         </ul>
     </nav>
-    <div class="timeline" id="timeline"></div>
+    <div class="timeline">
+        <div class="container">
+            <div class="date">2024-07-09</div>
+            <div class="content">
+                <h2>Graduation Day</h2>
+                <img src="public/img/20240709-Graduation.JPG" alt="Graduation">
+            </div>
+        </div>
+        <div class="container">
+            <div class="date">2023-09-25</div>
+            <div class="content">
+                <h2>Meeting in Mountain Tai</h2>
+                <img src="public/img/20230925-Mountain_Tai.jpg" alt="Mountain Tai">
+            </div>
+        </div>
+        <div class="container">
+            <div class="date">2022-01-20</div>
+            <div class="content">
+                <h2>Winter Outing to Lingyin Temple</h2>
+                <img src="public/img/20220120-Winter_Outing.jpg" alt="Winter Outing">
+            </div>
+        </div>
+    </div>
     <div style="margin: 0 0 100px 0;"></div>
     <footer>
         <p>&copy; 2024 <a href="https://github.com/2BF-Club" target="_blank">2BF-Club</a>. All rights reserved.</p>
     </footer>
-    <script>
-        const events = [
-            {
-                date: '2024-07-09',
-                title: 'Graduation Day',
-                imageSrc: 'public/img/20240709-Graduation.JPG',
-                description: 'Graduation'
-            },
-            {
-                date: '2023-09-25',
-                title: 'Meeting in Mountain Tai',
-                imageSrc: 'public/img/20230925-Mountain_Tai.jpg',
-                description: 'Mountain Tai'
-            },
-            {
-                date: '2022-01-20',
-                title: 'Winter Outing to Lingyin Temple',
-                imageSrc: 'public/img/20220120-Winter_Outing.jpg',
-                description: 'Winter Outing'
-            }
-        ];
-
-        const timeline = document.getElementById('timeline');
-
-        events.forEach(event => {
-            const container = document.createElement('div');
-            container.className = 'container';
-            container.innerHTML = `
-                <div class="date">${event.date}</div>
-                <div class="content">
-                    <h2>${event.title}</h2>
-                    <img src="${event.imageSrc}" alt="${event.description}">
-                </div>
-            `;
-            timeline.appendChild(container);
-        });
-    </script>
 </body>
 
 </html>

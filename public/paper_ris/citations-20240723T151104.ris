@@ -1,0 +1,25 @@
+Provider: Silverchair
+Database: Oxford University Press
+Content: text/plain; charset="UTF-8"
+
+TY  - JOUR
+AU  - Lyu, Chengshang
+AU  - Chen, Lingxi
+AU  - Liu, Xiaoping
+T1  - Detecting tipping points of complex diseases by network information entropy
+PY  - 2024
+Y1  - 2024/07/01
+DO  - 10.1093/bib/bbae311
+JO  - Briefings in Bioinformatics
+JA  - Brief Bioinform
+VL  - 25
+IS  - 4
+SP  - bbae311
+SN  - 1477-4054
+AB  - The progression of complex diseases often involves abrupt and non-linear changes characterized by sudden shifts that trigger critical transformations. Identifying these critical states or tipping points is crucial for understanding disease progression and developing effective interventions. To address this challenge, we have developed a model-free method named Network Information Entropy of Edges (NIEE). Leveraging dynamic network biomarkers, sample-specific networks, and information entropy theories, NIEE can detect critical states or tipping points in diverse data types, including bulk, single-sample expression data. By applying NIEE to real disease datasets, we successfully identified critical predisease stages and tipping points before disease onset. Our findings underscore NIEE’s potential to enhance comprehension of complex disease development.
+Y2  - 7/23/2024
+UR  - https://doi.org/10.1093/bib/bbae311
+ER  - 
+
+
+
