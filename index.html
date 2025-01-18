@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2BF Club</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- 添加 favicon 图标 -->
+    <link rel="icon" type="image/png" href="public/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="public/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="public/favicon/site.webmanifest" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -76,6 +82,47 @@
             align-items: center;
             flex-direction: column;
         }
+
+        /* 成员信息 */
+        .members-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .member-card {
+            width: 200px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .member-card h3 a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .member-card h3 a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -94,7 +141,7 @@
         <!-- 成员 -->
         <h2>2BF Club Members</h2>
         <p>Here are the members of the 2BF Club:</p>
-        <ul>
+        <!-- <ul>
             <li><a href="https://github.com/Bingchung">Bingxu Zhong</a></li>
             <li><a href="https://zaakzoeng.github.io/">Ze Zhang</a></li>
             <li><a href="https://github.com/XinleiCai">Xinlei Cai</a></li>
@@ -104,7 +151,8 @@
             <li><a href="https://zhangqib.github.io/">Qibin Zhang</a></li>
             <li><a href="">Xiaobei Liu</a></li>
             <li><a href="https://lllvcs.github.io/">Chengshang LYU</a></li>
-        </ul>
+        </ul> -->
+        <div id="members-container" class="members-container"></div>
         <hr>
         <!-- 地图 -->
         <h2>2BF Club Map of Members</h2>
@@ -116,9 +164,98 @@
     <footer>
         <p>&copy; 2024 <a href="https://github.com/2BF-Club" target="_blank">2BF-Club</a>. All rights reserved.</p>
     </footer>
+    <script>
+        // 成员信息数组
+        const members = [
+            {
+                name: 'Bingxu Zhong',
+                avatar: 'https://avatars.githubusercontent.com/u/654321?v=4',
+                website: 'https://github.com/Bingchung'
+            },
+            {
+                name: 'Zhongming Liang',
+                avatar: 'https://avatars.githubusercontent.com/u/6543298?v=4',
+                website: '#'
+            },
+            {
+                name: 'Ze Zhang',
+                avatar: 'https://zz.biometa.top/assets/img/prof_pic-480.webp',
+                website: 'https://zaakzoeng.github.io/'
+            },
+            {
+                name: 'Xinlei Cai',
+                avatar: 'https://avatars.githubusercontent.com/u/654323?v=4',
+                website: 'https://github.com/XinleiCai'
+            },
+            {
+                name: 'Zijian Wang',
+                avatar: 'https://avatars.githubusercontent.com/u/445566?v=4',
+                website: 'https://github.com/Wangzj000'
+            },
+            {
+                name: 'Mingqi Jiao',
+                avatar: 'https://avatars.githubusercontent.com/u/654326?v=4',
+                website: '#'
+            },
+            {
+                name: 'Jiachen Wang',
+                avatar: 'https://avatars.githubusercontent.com/u/778899?v=4',
+                website: 'https://github.com/jc1999123'
+            },
+            {
+                name: 'Qibin Zhang',
+                avatar: 'https://avatars.githubusercontent.com/u/998877?v=4',
+                website: 'https://zhangqib.github.io/'
+            },
+            {
+                name: 'Xiaobei Liu',
+                avatar: 'https://avatars.githubusercontent.com/u/654456?v=4',
+                website: '#'
+            },
+            {
+                name: 'Chengshang LYU',
+                avatar: 'https://avatars.githubusercontent.com/u/123789?v=4',
+                website: 'https://lllvcs.github.io/'
+            },
+            {
+                name: 'Rui Wei',
+                avatar: 'https://avatars.githubusercontent.com/u/654362?v=4',
+                website: 'https://github.com/ReinaWei'
+            }
+        ];
 
-    <!-- 成员数据 -->
+        // 获取目标容器
+        const container = document.getElementById('members-container');
 
+        // 遍历数组，生成每个成员的卡片
+        members.forEach(member => {
+            // 创建卡片元素
+            const card = document.createElement('div');
+            card.classList.add('member-card');
+
+            // 创建头像元素
+            const avatar = document.createElement('img');
+            avatar.src = member.avatar;
+            avatar.alt = member.name;
+            avatar.classList.add('member-avatar');
+
+            // 创建姓名和链接
+            const name = document.createElement('h3');
+            const link = document.createElement('a');
+            link.href = member.website;
+            link.textContent = member.name;
+
+            name.appendChild(link);
+
+            // 将头像和姓名添加到卡片
+            card.appendChild(avatar);
+            card.appendChild(name);
+
+            // 将卡片添加到容器中
+            container.appendChild(card);
+        });
+
+    </script>
     <!-- 地图数据 -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>

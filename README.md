@@ -9,6 +9,7 @@
 - https://2bf-club.github.io/2BF-Club/
 
 ## Logs
+* [X] 2025.01.18, 更新`index.html`样式
 * [X] 2024.07.23, 更新`index.html`添加人员信息
 * [X] 2024.07.23, 更新`publications.html`中文献的数据存储格式
 * [X] 2024.07.23, 更新`moments.html`中的数据存储格式
