@@ -132,6 +132,34 @@
         // Example of how RIS data might be formatted as a JavaScript object
         const publications = [
             {
+                "date": "2025-04-01",
+                "title": "De novo reconstruction of 3D human facial images from DNA sequence",
+                "citation": "Mingqi Jiao, J. Li, Bingxu Zhong, S. Du, Shuning Li, M. Zhang, Qibin Zhang, Zhongming Liang, ..., Luonan Chen (2025). Advanced science, e202414507.",
+                "url": "https://doi.org/10.1002/advs.202414507",
+                "abstract": "Upcoming..."
+            },
+            {
+                "date": "2025-02-18",
+                "title": "Predicting T Cell Mitochondria Hijacking from Tumor Single-Cell RNA Sequencing Data with MitoR",
+                "citation": "Anna Jiang, Chengshang Lyu, Yue Zhao (2025). Mathematics, 13(4), 673.",
+                "url": "https://doi.org/10.3390/math13040673",
+                "abstract": "T cells play a crucial role in the immune system by identifying and eliminating tumor cells. Malignant cancer cells can hijack mitochondria (MT) from nearby T cells, affecting their metabolism and weakening their immune functions. This phenomenon, observed through co-culture systems and fluorescent labeling, has been further explored with the development of the MERCI algorithm, which predicts T cell MT hijacking in cancer cells using single-cell RNA (scRNA) sequencing data. However, MERCI is limited by its reliance on a linear model and its inability to handle data sparsity. To address these challenges, we introduce MitoR, a computational algorithm using a Poisson–Gamma mixture model to predict T cell MT hijacking from tumor scRNA data. In performance comparisons, MitoR demonstrated improved performance compared to MERCI’s on gold-standard benchmark datasets scRNA-bench1 (top AUROC: 0.761, top accuracy: 0.769) and scRNA-bench2 (top AUROC: 0.730, top accuracy: 0.733). Additionally, MitoR showed an average 4.14% increase in AUROC and an average 3.86% increase in accuracy over MERCI in all rank strategies and simulated datasets. Finally, MitoR revealed T cell MT hijacking events in two real-world tumor datasets (basal cell carcinoma and esophageal squamous-cell carcinoma), highlighting their role in tumor immune evasion."
+            },
+            {
+                "date": "2025-02-08",
+                "title": "A pretrained transformer model for decoding individual glucose dynamics from continuous glucose monitoring data",
+                "citation": "Y. Lu, D. Liu, Zhongming Liang, ..., Yong Wang (2025). National Science Review, nwaf039.",
+                "url": "https://doi.org/10.1093/nsr/nwaf039",
+                "abstract": "Continuous glucose monitoring (CGM) technology has grown rapidly to track real-time blood glucose levels and trends with improved sensor accuracy. The ease of use and wide availability of CGM will facilitate safe and effective decision making for diabetes management. Here, we developed an attention-based deep learning model, CGMformer, pretrained on a well-controlled and diverse corpus of CGM data to represent individual's intrinsic metabolic state and enable clinical applications. During pretraining, CGMformer encodes glucose dynamics including glucose level, fluctuation, hyperglycemia, and hypoglycemia into latent space with self-supervised learning. It shows generalizability in imputing glucose value across five external datasets with different populations and metabolic states (MAE = 3.7 mg/dL). We then fine-tuned CGMformer towards a diverse panel of downstream tasks in the screening of diabetes and its complications using task-specific data, which demonstrated a consistently boosted predictive accuracy over direct fine-tuning on a single task (AUROC = 0.914 for type 2 diabetes (T2D) screening and 0.741 for complication screening). By learning an intrinsic representation of an individual's glucose dynamics, CGMformer classifies non-diabetic individuals into six clusters with elevated T2D risks, and identifies a specific cluster with lean body-shape but high risk of glucose metabolism disorders, which is overlooked by traditional glucose measurements. Furthermore, CGMformer achieves high accuracy in predicting an individual's postprandial glucose response with dietary modelling (Pearson correlation coefficient = 0.763) and helps personalized dietary recommendations. Overall, CGMformer pretrains a transformer neural network architecture to learn an intrinsic representation by borrowing information from a large amount of daily glucose profiles, and demonstrates predictive capabilities fine-tuned towards a broad range of downstream applications, holding promise for the early warning of T2D and recommendations for lifestyle modification in diabetes management."
+            },
+            {
+                "date": "2024-10-31",
+                "title": "Multi-gradient Permutation Survival Analysis Identifies Mitosis and Immune Signatures Steadily Associated with Cancer Patient Prognosis",
+                "citation": "Xinlei Cai, Yi Ye, Xiaoping Liu, Z. Fang, Luonan Chen, Fei Li, Hongbin Ji (2024). eLife, 13.",
+                "url": "https://doi.org/10.7554/eLife.101619",
+                "abstract": "The inconsistency of the association between genes and cancer prognosis is often attributed to many variables that contribute to patient survival. Whether there exist the Genes Steadily Associated with Prognosis (GEARs) and what their functions are remain largely elusive. We have developed a novel method called “Multi-gradient Permutation Survival Analysis” (MEMORY) to screen the GEARs using RNA-seq data from the TCGA database. Then we employed a network construction approach to identify hub genes from GEARs, and utilized them for cancer classification. In the case of LUAD, the GEARs were found to be related to mitosis. Our analysis suggested that LUAD cell lines carrying PIK3CA mutations exhibit increased drug resistance. For BRCA, the GEARs were related to immunity. The analysis revealed that CDH1 mutation might influence immune infiltration through the EMT process in BRCA. We further explored the prognostic relevance of mitosis and immunity through their respective scores. This study offers significant biological insights into GEARs and highlights their potential as robust prognostic indicators across diverse cancer types."
+            },
+            {
                 "date": "2024-10-23",
                 "title": "Reconstructing Molecular Networks by Causal Diffusion Do-Calculus Analysis with Deep Learning",
                 "citation": "Jiachen Wang, ..., Luonan Chen, Xiaoping Liu (2024). Advanced science, e2409170.",
