@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2BF Publications</title>
+    <!-- 添加 favicon 图标 -->
+    <link rel="icon" type="image/png" href="public/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="public/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="public/favicon/site.webmanifest" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -115,75 +121,141 @@
         </ul>
     </nav>
     <div class="timeline">
-        <div class="container">
-            <div class="date">2024-07-03</div>
-            <div class="content">
-                <h2>Detecting tipping points of complex diseases by network information entropy</h2>
-                <p><b>Lyu, Chengshang</b>, Chen, L., & Liu, X. (2024). Detecting tipping points of complex diseases by
-                    network information entropy. Briefings in Bioinformatics, 25(4).</p>
-                <p><a href="https://doi.org/10.1093/bib/bbae311" target="_blank">https://doi.org/10.1093/bib/bbae311</a>
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2024-04-10</div>
-            <div class="content">
-                <h2>Sex differences orchestrated by androgens at single-cell resolution</h2>
-                <p>Li, F., ... , <b>Zhang, Ze</b>, ..., & Gao, D. (2024). Sex differences orchestrated by androgens at
-                    single-cell resolution. Nature, 1-8.</p>
-                <p><a href="https://doi.org/10.1038/s41586-024-07291-6"
-                        target="_blank">https://doi.org/10.1038/s41586-024-07291-6</a></p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2024-01-30</div>
-            <div class="content">
-                <h2>Brain-inspired chaotic spiking backpropagation</h2>
-                <p><b>Zijian Wang</b>, Peng Tao, Luonan Chen, Brain-inspired chaotic spiking backpropagation, National
-                    Science Review, Volume 11, Issue 6, June 2024, nwae037, https://doi.org/10.1093/nsr/nwae037</p>
-                <p><a href="https://doi.org/10.1093/nsr/nwae037" target="_blank">https://doi.org/10.1093/nsr/nwae037</a>
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2023-09-05</div>
-            <div class="content">
-                <h2>Earthquake alerting based on spatial geodetic data by spatiotemporal information transformation
-                    learning</h2>
-                <p>Tong, Y., Hong, R., <b>Zhang, Ze</b>, Aihara, K., Chen, P., Liu, R., & Chen, L. (2023). Earthquake
-                    alerting based on spatial geodetic data by spatiotemporal information transformation learning.
-                    Proceedings of the National Academy of Sciences, 120(37), e2302275120.</p>
-                <p><a href="https://doi.org/10.1073/pnas.2302275120"
-                        target="_blank">https://doi.org/10.1073/pnas.2302275120</a></p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2023-01-27</div>
-            <div class="content">
-                <h2>TeCD: The eccDNA Collection Database for extrachromosomal circular DNA</h2>
-                <p>Guo, J., <b>Zhang, Ze</b>, Li, Q., Chang, X., & Liu, X. (2023). Tecd: The eccdna collection database
-                    for extrachromosomal circular dna. BMC genomics, 24(1), 47.</p>
-                <p><a href="https://doi.org/10.1186/s12864-023-09135-5"
-                        target="_blank">https://doi.org/10.1186/s12864-023-09135-5</a></p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="date">2022-10-10</div>
-            <div class="content">
-                <h2>Elucidating tumor heterogeneity from spatially resolved transcriptomics data by multi-view graph
-                    collaborative learning</h2>
-                <p>Zuo, C., Zhang, Y., Cao, C., Feng, J., <b>Jiao, Mingqi</b>, & Chen, L. (2022). Elucidating tumor
-                    heterogeneity from spatially resolved transcriptomics data by multi-view graph collaborative
-                    learning. Nature Communications, 13(1), 5962.</p>
-                <p><a href="https://doi.org/10.1038/s41467-022-33619-9"
-                        target="_blank">https://doi.org/10.1038/s41467-022-33619-9</a></p>
-            </div>
-        </div>
+        <div id="publications-container"></div>
     </div>
     <div style="margin: 0 0 100px 0;"></div>
     <footer>
         <p>&copy; 2024 <a href="https://github.com/2BF-Club" target="_blank">2BF-Club</a>. All rights reserved.</p>
     </footer>
+    <!-- 文章数据 -->
+    <script>
+        // Example of how RIS data might be formatted as a JavaScript object
+        const publications = [
+            {
+                "date": "2025-04-01",
+                "title": "De novo reconstruction of 3D human facial images from DNA sequence",
+                "citation": "Mingqi Jiao, J. Li, Bingxu Zhong, S. Du, Shuning Li, M. Zhang, Qibin Zhang, Zhongming Liang, ..., Luonan Chen (2025). Advanced science, e202414507.",
+                "url": "https://doi.org/10.1002/advs.202414507",
+                "abstract": "Upcoming..."
+            },
+            {
+                "date": "2025-03-21",
+                "title": "FACdb: a comprehensive resource for genes, gut microbiota, and metabolites in farm animals",
+                "citation": "Ze Zhang, ..., Xiaoping Liu (2025). Frontiers in Microbiology. 16. 10.3389/fmicb.2025.1557285.",
+                "url": "https://doi.org/10.3389/fmicb.2025.1557285",
+                "abstract": "Farm animals, including livestock and poultry, play essential economic, social, and cultural roles and are indispensable in human welfare. Farm Animal Connectome database (FACdb) is a comprehensive resource that includes the association networks among gene expression, gut microbiota, and metabolites in farm animals. Although some databases present the relationship between gut microbes, metabolites, and gene expression, these databases are limited to human and mouse species, with limited data for farm animals. In this database, we calculate the associations and summarize the connections among gene expression, gut microbiota, and metabolites in farm animals using six correlation or distance calculation (including Pearson, Spearman, Cosine, Euclidean, Bray–Curtis, and Mahalanobis). FACdb contains over 55 million potential interactions of 73,571 genes, 11,046 gut microbiota, and 4,540 metabolites. It provides an easy-to-use interface for browsing and searching the association information. Additionally, FACdb offers interactive visualization tools to effectively investigate the relationship among the genes, gut microbiota, and metabolites in farm animals. Overall, FACdb is a valuable resource for understanding interactions among gut microbiota, metabolites, and gene expression. It contributes to the further utilization of microbes in animal products and welfare promotion. Compared to mice, pigs or other farm animals share more similarities with humans in molecular, cellular, and organ-level responses, indicating that our database may offer new insights into the relationship among gut microbiota, metabolites, and gene expression in humans."
+            },
+            {
+                "date": "2025-02-18",
+                "title": "Predicting T Cell Mitochondria Hijacking from Tumor Single-Cell RNA Sequencing Data with MitoR",
+                "citation": "Anna Jiang, Chengshang Lyu, Yue Zhao (2025). Mathematics, 13(4), 673.",
+                "url": "https://doi.org/10.3390/math13040673",
+                "abstract": "T cells play a crucial role in the immune system by identifying and eliminating tumor cells. Malignant cancer cells can hijack mitochondria (MT) from nearby T cells, affecting their metabolism and weakening their immune functions. This phenomenon, observed through co-culture systems and fluorescent labeling, has been further explored with the development of the MERCI algorithm, which predicts T cell MT hijacking in cancer cells using single-cell RNA (scRNA) sequencing data. However, MERCI is limited by its reliance on a linear model and its inability to handle data sparsity. To address these challenges, we introduce MitoR, a computational algorithm using a Poisson–Gamma mixture model to predict T cell MT hijacking from tumor scRNA data. In performance comparisons, MitoR demonstrated improved performance compared to MERCI’s on gold-standard benchmark datasets scRNA-bench1 (top AUROC: 0.761, top accuracy: 0.769) and scRNA-bench2 (top AUROC: 0.730, top accuracy: 0.733). Additionally, MitoR showed an average 4.14% increase in AUROC and an average 3.86% increase in accuracy over MERCI in all rank strategies and simulated datasets. Finally, MitoR revealed T cell MT hijacking events in two real-world tumor datasets (basal cell carcinoma and esophageal squamous-cell carcinoma), highlighting their role in tumor immune evasion."
+            },
+            {
+                "date": "2025-02-08",
+                "title": "A pretrained transformer model for decoding individual glucose dynamics from continuous glucose monitoring data",
+                "citation": "Y. Lu, D. Liu, Zhongming Liang, ..., Yong Wang (2025). National Science Review, nwaf039.",
+                "url": "https://doi.org/10.1093/nsr/nwaf039",
+                "abstract": "Continuous glucose monitoring (CGM) technology has grown rapidly to track real-time blood glucose levels and trends with improved sensor accuracy. The ease of use and wide availability of CGM will facilitate safe and effective decision making for diabetes management. Here, we developed an attention-based deep learning model, CGMformer, pretrained on a well-controlled and diverse corpus of CGM data to represent individual's intrinsic metabolic state and enable clinical applications. During pretraining, CGMformer encodes glucose dynamics including glucose level, fluctuation, hyperglycemia, and hypoglycemia into latent space with self-supervised learning. It shows generalizability in imputing glucose value across five external datasets with different populations and metabolic states (MAE = 3.7 mg/dL). We then fine-tuned CGMformer towards a diverse panel of downstream tasks in the screening of diabetes and its complications using task-specific data, which demonstrated a consistently boosted predictive accuracy over direct fine-tuning on a single task (AUROC = 0.914 for type 2 diabetes (T2D) screening and 0.741 for complication screening). By learning an intrinsic representation of an individual's glucose dynamics, CGMformer classifies non-diabetic individuals into six clusters with elevated T2D risks, and identifies a specific cluster with lean body-shape but high risk of glucose metabolism disorders, which is overlooked by traditional glucose measurements. Furthermore, CGMformer achieves high accuracy in predicting an individual's postprandial glucose response with dietary modelling (Pearson correlation coefficient = 0.763) and helps personalized dietary recommendations. Overall, CGMformer pretrains a transformer neural network architecture to learn an intrinsic representation by borrowing information from a large amount of daily glucose profiles, and demonstrates predictive capabilities fine-tuned towards a broad range of downstream applications, holding promise for the early warning of T2D and recommendations for lifestyle modification in diabetes management."
+            },
+            {
+                "date": "2024-10-31",
+                "title": "Multi-gradient Permutation Survival Analysis Identifies Mitosis and Immune Signatures Steadily Associated with Cancer Patient Prognosis",
+                "citation": "Xinlei Cai, Yi Ye, Xiaoping Liu, Z. Fang, Luonan Chen, Fei Li, Hongbin Ji (2024). eLife, 13.",
+                "url": "https://doi.org/10.7554/eLife.101619",
+                "abstract": "The inconsistency of the association between genes and cancer prognosis is often attributed to many variables that contribute to patient survival. Whether there exist the Genes Steadily Associated with Prognosis (GEARs) and what their functions are remain largely elusive. We have developed a novel method called “Multi-gradient Permutation Survival Analysis” (MEMORY) to screen the GEARs using RNA-seq data from the TCGA database. Then we employed a network construction approach to identify hub genes from GEARs, and utilized them for cancer classification. In the case of LUAD, the GEARs were found to be related to mitosis. Our analysis suggested that LUAD cell lines carrying PIK3CA mutations exhibit increased drug resistance. For BRCA, the GEARs were related to immunity. The analysis revealed that CDH1 mutation might influence immune infiltration through the EMT process in BRCA. We further explored the prognostic relevance of mitosis and immunity through their respective scores. This study offers significant biological insights into GEARs and highlights their potential as robust prognostic indicators across diverse cancer types."
+            },
+            {
+                "date": "2024-10-23",
+                "title": "Reconstructing Molecular Networks by Causal Diffusion Do-Calculus Analysis with Deep Learning",
+                "citation": "Jiachen Wang, ..., Luonan Chen, Xiaoping Liu (2024). Advanced science, e2409170.",
+                "url": "https://doi.org/10.1002/advs.202409170",
+                "abstract": "Quantifying molecular regulations between genes/molecules causally from observed data is crucial for elucidating the molecular mechanisms underlying biological processes at the network level. Presently, most methods for inferring gene regulatory and biological networks rely on association studies or observational causal-analysis approaches. This study introduces a novel approach that combines intervention operations and diffusion models within a do-calculus framework by deep learning, i.e., Causal Diffusion Do-calculus (CDD) analysis, to infer causal networks between molecules. CDD can extract causal relations from observed data owing to its intervention operations, thereby significantly enhancing the accuracy and generalizability of causal network inference. Computationally, CDD has been applied to both simulated data and real omics data, which demonstrates that CDD outperforms existing methods in accurately inferring gene regulatory networks and identifying causal links from genes to disease phenotypes. Especially, compared with the Mendelian randomization algorithm and other existing methods, the CDD can reliably identify the disease genes or molecules for complex diseases with better performances. In addition, the causal analysis between various diseases and the potential factors in different populations from the UK Biobank database is also conducted, which further validated the effectiveness of CDD."
+            },
+            {
+                "date": "2024-07-28",
+                "title": "CIDER: Counterfactual-Invariant Diffusion-based GNN Explainer for Causal Subgraph Inference",
+                "citation": "Qibin Zhang, Chengshang Lyu, Lingxi Chen, ..., Luonan Chen (2024). arXiv Preprint, arXiv:2407.19376.",
+                "url": "https://arxiv.org/abs/2407.19376",
+                "abstract": "Inferring causal links or subgraphs corresponding to a specific phenotype or label based solely on measured data is an important yet challenging task, which is also different from inferring causal nodes. While Graph Neural Network (GNN) Explainers have shown potential in subgraph identification, existing methods with GNN often offer associative rather than causal insights. This lack of transparency and explainability hinders our understanding of their results and also underlying mechanisms. To address this issue, we propose a novel method of causal link/subgraph inference, called CIDER: Counterfactual-Invariant Diffusion-based GNN ExplaineR, by implementing both counterfactual and diffusion implementations. In other words, it is a model-agnostic and task-agnostic framework for generating causal explanations based on a counterfactual-invariant and diffusion process, which provides not only causal subgraphs due to counterfactual implementation but reliable causal links due to the diffusion process. Specifically, CIDER is first formulated as an inference task that generatively provides the two distributions of one causal subgraph and another spurious subgraph. Then, to enhance the reliability, we further model the CIDER framework as a diffusion process. Thus, using the causal subgraph distribution, we can explicitly quantify the contribution of each subgraph to a phenotype/label in a counterfactual manner, representing each subgraph's causal strength. From a causality perspective, CIDER is an interventional causal method, different from traditional association studies or observational causal approaches, and can also reduce the effects of unobserved confounders. We evaluate CIDER on both synthetic and real-world datasets, which all demonstrate the superiority of CIDER over state-of-the-art methods."
+            },
+            {
+                "date": "2024-07-03",
+                "title": "Detecting tipping points of complex diseases by network information entropy",
+                "citation": "Chengshang Lyu, Lingxi Chen, Xiaoping Liu (2024). Briefings in Bioinformatics, Volume 25, Issue 4, bbae311.",
+                "url": "https://doi.org/10.1093/bib/bbae311",
+                "abstract": "The progression of complex diseases often involves abrupt and non-linear changes characterized by sudden shifts that trigger critical transformations. Identifying these critical states or tipping points is crucial for understanding disease progression and developing effective interventions. To address this challenge, we have developed a model-free method named Network Information Entropy of Edges (NIEE). Leveraging dynamic network biomarkers, sample-specific networks, and information entropy theories, NIEE can detect critical states or tipping points in diverse data types, including bulk, single-sample expression data. By applying NIEE to real disease datasets, we successfully identified critical predisease stages and tipping points before disease onset. Our findings underscore NIEE’s potential to enhance comprehension of complex disease development."
+            },
+            {
+                "date": "2024-04-10",
+                "title": "Sex differences orchestrated by androgens at single-cell resolution",
+                "citation": "F. Li, ... , Ze Zhang, ..., Dong Gao (2024). Nature, 629, 193–200",
+                "url": "https://doi.org/10.1038/s41586-024-07291-6",
+                "abstract": "Sex differences in mammalian complex traits are prevalent and are intimately associated with androgens1,2,3,4,5,6,7. However, a molecular and cellular profile of sex differences and their modulation by androgens is still lacking. Here we constructed a high-dimensional single-cell transcriptomic atlas comprising over 2.3 million cells from 17 tissues in Mus musculus and explored the effects of sex and androgens on the molecular programs and cellular populations. In particular, we found that sex-biased immune gene expression and immune cell populations, such as group 2 innate lymphoid cells, were modulated by androgens. Integration with the UK Biobank dataset revealed potential cellular targets and risk gene enrichment in antigen presentation for sex-biased diseases. This study lays the groundwork for understanding the sex differences orchestrated by androgens and provides important evidence for targeting the androgen pathway as a broad therapeutic strategy for sex-biased diseases."
+            },
+            {
+                "date": "2024-03-01",
+                "title": "A Systematic Review of the Application of Machine Learning in CpG Island (CGI) Detection and Methylation Prediction",
+                "citation": "Rui Wei, Le Zhang, Huiru Zheng, Ming Xiao (2024). Current Bioinformatics, 19(3), 235-249.",
+                "url": "https://doi.org/10.2174/1574893618666230508104341",
+                "abstract": "CpG island (CGI) detection and methylation prediction play important roles in studying the complex mechanisms of CGIs involved in genome regulation. In recent years, machine learning (ML) has been gradually applied to CGI detection and CGI methylation prediction algorithms in order to improve the accuracy of traditional methods. However, there are a few systematic reviews on the application of ML in CGI detection and CGI methylation prediction. Therefore, this systematic review aims to provide an overview of the application of ML in CGI detection and methylation prediction. Methods: The review was carried out using the PRISMA guideline. The search strategy was applied to articles published on PubMed from 2000 to July 10, 2022. Two independent researchers screened the articles based on the retrieval strategies and identified a total of 54 articles. After that, we developed quality assessment questions to assess study quality and obtained 46 articles that met the eligibility criteria. Based on these articles, we first summarized the applications of ML methods in CGI detection and methylation prediction, and then identified the strengths and limitations of these studies. Result: Finally, we have discussed the challenges and future research directions. Conclusion: This systematic review will contribute to the selection of algorithms and the future development of more efficient algorithms for CGI detection and methylation prediction."
+            },
+            {
+                "date": "2024-02-01",
+                "title": "CpG Island Definition and Methylation Mapping of the T2T-YAO Genome",
+                "citation": "Ming Xiao, Rui Wei, ..., Le Zhang (2024). Genomics, Proteomics & Bioinformatics, 22(2), qzae009.",
+                "url": "https://doi.org/10.1093/gpbjnl/qzae009",
+                "abstract": "Precisely defining and mapping all cytosine (C) positions and their clusters, known as CpG islands (CGIs), as well as their methylation status, are pivotal for genome-wide epigenetic studies, especially when population-centric reference genomes are ready for timely application. Here, we first align the two high-quality reference genomes, T2T-YAO and T2T-CHM13, from different ethnic backgrounds in a base-by-base fashion and compute their genome-wide density-defined and position-defined CGIs. Second, by mapping some representative genome-wide methylation data from selected organs onto the two genomes, we find that there are about 4.7%–5.8% sequence divergency of variable categories depending on quality cutoffs. Genes among the divergent sequences are mostly associated with neurological functions. Moreover, CGIs associated with the divergent sequences are significantly different with respect to CpG density and observed CpG/expected CpG (O/E) ratio between the two genomes. Finally, we find that the T2T-YAO genome not only has a greater CpG coverage than that of the T2T-CHM13 genome when whole-genome bisulfite sequencing (WGBS) data from the European and American populations are mapped to each reference, but also shows more hyper-methylated CpG sites as compared to the T2T-CHM13 genome. Our study suggests that future genome-wide epigenetic studies of the Chinese populations rely on both acquisition of high-quality methylation data and subsequent precision CGI mapping based on the Chinese T2T reference."
+            },
+            {
+                "date": "2024-01-30",
+                "title": "Brain-inspired chaotic spiking backpropagation",
+                "citation": "Zijian Wang, Peng Tao, Luonan Chen (2024). National Science Review, Volume 11, Issue 6, nwae037.",
+                "url": "https://doi.org/10.1093/nsr/nwae037",
+                "abstract": "Spiking neural networks (SNNs) have superior energy efficiency due to their spiking signal transmission, which mimics biological nervous systems, but they are difficult to train effectively. Although surrogate gradient-based methods offer a workable solution, trained SNNs frequently fall into local minima because they are still primarily based on gradient dynamics. Inspired by the chaotic dynamics in animal brain learning, we propose a chaotic spiking backpropagation (CSBP) method that introduces a loss function to generate brain-like chaotic dynamics and further takes advantage of the ergodic and pseudo-random nature to make SNN learning effective and robust. From a computational viewpoint, we found that CSBP significantly outperforms current state-of-the-art methods on both neuromorphic data sets (e.g. DVS-CIFAR10 and DVS-Gesture) and large-scale static data sets (e.g. CIFAR100 and ImageNet) in terms of accuracy and robustness. From a theoretical viewpoint, we show that the learning process of CSBP is initially chaotic, then subject to various bifurcations and eventually converges to gradient dynamics, consistently with the observation of animal brain activity. Our work provides a superior core tool for direct SNN training and offers new insights into understanding the learning process of a biological brain."
+            },
+            {
+                "date": "2023-09-05",
+                "title": "Earthquake alerting based on spatial geodetic data by spatiotemporal information transformation learning",
+                "citation": "Y. Tong, ..., Ze Zhang, ..., Luonan Chen (2023). Proceedings of the National Academy of Sciences, 120(37), e2302275120.",
+                "url": "https://doi.org/10.1073/pnas.2302275120",
+                "abstract": "Alerting for imminent earthquakes is particularly challenging due to the high nonlinearity and nonstationarity of geodynamical phenomena. In this study, based on spatiotemporal information (STI) transformation for high-dimensional real-time data, we developed a model-free framework, i.e., real-time spatiotemporal information transformation learning (RSIT), for extending the nonlinear and nonstationary time series. Specifically, by transforming high-dimensional information of the global navigation satellite system into one-dimensional dynamics via the STI strategy, RSIT efficiently utilizes two criteria of the transformed one-dimensional dynamics, i.e., unpredictability and instability. Such two criteria contemporaneously signal a potential critical transition of the geodynamical system, thereby providing early-warning signals of possible upcoming earthquakes. RSIT explores both the spatial and temporal dynamics of real-world data on the basis of a solid theoretical background in nonlinear dynamics and delay-embedding theory. The effectiveness of RSIT was demonstrated on geodynamical data of recent earthquakes from a number of regions across at least 4 y and through further comparison with existing methods."
+            },
+            {
+                "date": "2023-01-27",
+                "title": "TeCD: The eccDNA Collection Database for extrachromosomal circular DNA",
+                "citation": "J. Guo, Ze Zhang, ..., Xiaoping Liu (2023). BMC genomics, 24(1), 47.",
+                "url": "https://doi.org/10.1186/s12864-023-09135-5",
+                "abstract": "Background Extrachromosomal circular DNA (eccDNA) is a kind of DNA that widely exists in eukaryotic cells. Studies in recent years have shown that eccDNA is often enriched during tumors and aging, and participates in the development of cell physiological activities in a special way, so people have paid more and more attention to the eccDNA, and it has also become a critical new topic in modern biological research. Description We built a database to collect eccDNA, including animals, plants and fungi, and provide researchers with an eccDNA retrieval platform. The collected eccDNAs were processed in a uniform format and classified according to the species to which it belongs and the chromosome of the source. Each eccDNA record contained sequence length, start and end sites on the corresponding chromosome, order of the bases, genomic elements such as genes and transposons, and other information in the respective sequencing experiment. All the data were stored into the TeCD (The eccDNA Collection Database) and the BLAST (Basic Local Alignment Search Tool) sequence alignment function was also added into the database for analyzing the potential eccDNA sequences. Conclusion We built TeCD, a platform for users to search and obtain eccDNA data, and analyzed the possible potential functions of eccDNA. These findings may provide a basis and direction for researchers to further explore the biological significance of eccDNA in the future."
+            },
+            {
+                "date": "2022-10-10",
+                "title": "Elucidating tumor heterogeneity from spatially resolved transcriptomics data by multi-view graph collaborative learning",
+                "citation": "C. Zuo, ..., Mingqi Jiao, Luonan Chen (2022). Nature Communications, 13(1), 5962.",
+                "url": "https://doi.org/10.1038/s41467-022-33619-9",
+                "abstract": "Spatially resolved transcriptomics (SRT) technology enables us to gain novel insights into tissue architecture and cell development, especially in tumors. However, lacking computational exploitation of biological contexts and multi-view features severely hinders the elucidation of tissue heterogeneity. Here, we propose stMVC, a multi-view graph collaborative-learning model that integrates histology, gene expression, spatial location, and biological contexts in analyzing SRT data by attention. Specifically, stMVC adopting semi-supervised graph attention autoencoder separately learns view-specific representations of histological-similarity-graph or spatial-location-graph, and then simultaneously integrates two-view graphs for robust representations through attention under semi-supervision of biological contexts. stMVC outperforms other tools in detecting tissue structure, inferring trajectory relationships, and denoising on benchmark slices of human cortex. Particularly, stMVC identifies disease-related cell-states and their transition cell-states in breast cancer study, which are further validated by the functional and survival analysis of independent clinical data. Those results demonstrate clinical and prognostic applications from SRT data."
+            }
+
+        ];
+
+        const container = document.getElementById('publications-container');
+
+        publications.forEach(pub => {
+            const pubHTML = `
+                <div class="container">
+                    <div class="date">${pub.date}</div>
+                    <div class="content">
+                        <h2>${pub.title}</h2>
+                        <p>${pub.citation}</p>
+                        <p><a href="${pub.url}" target="_blank">${pub.url}</a></p>
+                        <p>Abstract: ${pub.abstract}</p>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += pubHTML;
+        });
+    </script>
 </body>
 
 </html>
